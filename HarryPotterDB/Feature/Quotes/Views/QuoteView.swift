@@ -44,7 +44,8 @@ struct QuoteView: View {
         
         if let range = string.range(of: label) {
             string[range].foregroundColor = .black.opacity(0.8)
-            string[range].font = .system(size: 16, weight: .bold)
+            string[range].font = .system(size: 16)
+            string[range].foregroundColor = .red
         }
         
         return string

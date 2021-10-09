@@ -1,6 +1,6 @@
 //
-//  SwiftUI_StarterApp.swift
-//  SwiftUI Starter
+//  HarryPotterDB.swift
+//  Harry Potter DB
 //
 //  Created by Russell Gordon on 2021-10-07.
 //
@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct SwiftUI_StarterApp: App {
+struct HarryPotterDBApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            QuotesScreen()
         }
     }
 }

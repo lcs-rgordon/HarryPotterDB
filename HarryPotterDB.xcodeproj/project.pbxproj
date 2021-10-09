@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0EECE647270F051D00E7E8D1 /* SwiftUI_StarterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EECE646270F051D00E7E8D1 /* SwiftUI_StarterApp.swift */; };
-		0EECE649270F051D00E7E8D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EECE648270F051D00E7E8D1 /* ContentView.swift */; };
+		0EECE647270F051D00E7E8D1 /* HarryPotterDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EECE646270F051D00E7E8D1 /* HarryPotterDB.swift */; };
 		0EECE64B270F051F00E7E8D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EECE64A270F051F00E7E8D1 /* Assets.xcassets */; };
 		0EECE64E270F051F00E7E8D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EECE64D270F051F00E7E8D1 /* Preview Assets.xcassets */; };
 		0EECE656270F054200E7E8D1 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EECE655270F054200E7E8D1 /* APIConstants.swift */; };
@@ -21,9 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0EECE643270F051D00E7E8D1 /* SwiftUI Starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0EECE646270F051D00E7E8D1 /* SwiftUI_StarterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_StarterApp.swift; sourceTree = "<group>"; };
-		0EECE648270F051D00E7E8D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0EECE643270F051D00E7E8D1 /* HarryPotterDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HarryPotterDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EECE646270F051D00E7E8D1 /* HarryPotterDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarryPotterDB.swift; sourceTree = "<group>"; };
 		0EECE64A270F051F00E7E8D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EECE64D270F051F00E7E8D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0EECE655270F054200E7E8D1 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
@@ -49,7 +47,8 @@
 		0EECE63A270F051D00E7E8D1 = {
 			isa = PBXGroup;
 			children = (
-				0EECE645270F051D00E7E8D1 /* SwiftUI Starter */,
+				0EECE646270F051D00E7E8D1 /* HarryPotterDB.swift */,
+				0EECE645270F051D00E7E8D1 /* HarryPotterDB */,
 				0EECE644270F051D00E7E8D1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,22 +56,20 @@
 		0EECE644270F051D00E7E8D1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0EECE643270F051D00E7E8D1 /* SwiftUI Starter.app */,
+				0EECE643270F051D00E7E8D1 /* HarryPotterDB.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0EECE645270F051D00E7E8D1 /* SwiftUI Starter */ = {
+		0EECE645270F051D00E7E8D1 /* HarryPotterDB */ = {
 			isa = PBXGroup;
 			children = (
 				0EECE668270F1D9200E7E8D1 /* Base */,
 				0EECE657270F057900E7E8D1 /* Feature */,
-				0EECE646270F051D00E7E8D1 /* SwiftUI_StarterApp.swift */,
-				0EECE648270F051D00E7E8D1 /* ContentView.swift */,
 				0EECE64A270F051F00E7E8D1 /* Assets.xcassets */,
 				0EECE64C270F051F00E7E8D1 /* Preview Content */,
 			);
-			path = "SwiftUI Starter";
+			path = HarryPotterDB;
 			sourceTree = "<group>";
 		};
 		0EECE64C270F051F00E7E8D1 /* Preview Content */ = {
@@ -179,9 +176,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0EECE642270F051D00E7E8D1 /* SwiftUI Starter */ = {
+		0EECE642270F051D00E7E8D1 /* HarryPotterDB */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0EECE651270F051F00E7E8D1 /* Build configuration list for PBXNativeTarget "SwiftUI Starter" */;
+			buildConfigurationList = 0EECE651270F051F00E7E8D1 /* Build configuration list for PBXNativeTarget "HarryPotterDB" */;
 			buildPhases = (
 				0EECE63F270F051D00E7E8D1 /* Sources */,
 				0EECE640270F051D00E7E8D1 /* Frameworks */,
@@ -191,9 +188,9 @@
 			);
 			dependencies = (
 			);
-			name = "SwiftUI Starter";
+			name = HarryPotterDB;
 			productName = "SwiftUI Starter";
-			productReference = 0EECE643270F051D00E7E8D1 /* SwiftUI Starter.app */;
+			productReference = 0EECE643270F051D00E7E8D1 /* HarryPotterDB.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -211,7 +208,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0EECE63E270F051D00E7E8D1 /* Build configuration list for PBXProject "SwiftUI Starter" */;
+			buildConfigurationList = 0EECE63E270F051D00E7E8D1 /* Build configuration list for PBXProject "HarryPotterDB" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -224,7 +221,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0EECE642270F051D00E7E8D1 /* SwiftUI Starter */,
+				0EECE642270F051D00E7E8D1 /* HarryPotterDB */,
 			);
 		};
 /* End PBXProject section */
@@ -249,8 +246,7 @@
 				0EECE65B270F059100E7E8D1 /* Quote.swift in Sources */,
 				0EECE664270F0A8F00E7E8D1 /* QuotesService.swift in Sources */,
 				0EECE661270F090C00E7E8D1 /* QuoteView.swift in Sources */,
-				0EECE649270F051D00E7E8D1 /* ContentView.swift in Sources */,
-				0EECE647270F051D00E7E8D1 /* SwiftUI_StarterApp.swift in Sources */,
+				0EECE647270F051D00E7E8D1 /* HarryPotterDB.swift in Sources */,
 				0EECE667270F0C6C00E7E8D1 /* QuotesViewModel.swift in Sources */,
 				0EECE656270F054200E7E8D1 /* APIConstants.swift in Sources */,
 				0EECE65E270F06A100E7E8D1 /* QuotesScreen.swift in Sources */,
@@ -440,7 +436,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0EECE63E270F051D00E7E8D1 /* Build configuration list for PBXProject "SwiftUI Starter" */ = {
+		0EECE63E270F051D00E7E8D1 /* Build configuration list for PBXProject "HarryPotterDB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0EECE64F270F051F00E7E8D1 /* Debug */,
@@ -449,7 +445,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0EECE651270F051F00E7E8D1 /* Build configuration list for PBXNativeTarget "SwiftUI Starter" */ = {
+		0EECE651270F051F00E7E8D1 /* Build configuration list for PBXNativeTarget "HarryPotterDB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0EECE652270F051F00E7E8D1 /* Debug */,
