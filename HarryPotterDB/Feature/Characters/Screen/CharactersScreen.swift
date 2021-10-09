@@ -21,15 +21,18 @@ struct CharactersScreen: View {
             if vm.characters.isEmpty {
                 LoadingView(text: "Fetching characters")
             } else {
-                List {
+                NavigationView {
+                    List {
 
-                    // Display the list of characters
-                    ForEach(vm.characters, id: \.name) { item in
+                        // Display the list of characters
+                        ForEach(vm.characters, id: \.name) { item in
 
-                        CharacterView(item: item)
+                            CharacterView(item: item)
+
+                        }
 
                     }
-
+                    .navigationTitle("Characters")
                 }
             }
 

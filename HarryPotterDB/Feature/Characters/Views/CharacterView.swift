@@ -24,7 +24,6 @@ struct CharacterView: View {
                 image
                     .resizable()
                     .scaledToFill()
-                    .background(Color.gray)
             } placeholder: {
                 ProgressView()
             }
@@ -39,7 +38,6 @@ struct CharacterView: View {
             
         }
        .padding()
-       .foregroundColor(.black)
 
     }
     
@@ -47,13 +45,13 @@ struct CharacterView: View {
     private func makeAttributedString(title: String, label: String) -> AttributedString {
         
         var string = AttributedString("\(title): \(label)")
-        string.foregroundColor = .black
+        string.foregroundColor = .primary
         string.font = .system(size: 16, weight: .bold)
         
         if let range = string.range(of: label) {
             string[range].foregroundColor = .black.opacity(0.8)
             string[range].font = .system(size: 16)
-            string[range].foregroundColor = .black
+            string[range].foregroundColor = .primary
         }
         
         return string
