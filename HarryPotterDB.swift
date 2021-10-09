@@ -11,7 +11,7 @@ import SwiftUI
 struct HarryPotterDBApp: App {
     var body: some Scene {
         WindowGroup {
-            QuotesScreen()
+            CharactersScreen()
         }
     }
 }

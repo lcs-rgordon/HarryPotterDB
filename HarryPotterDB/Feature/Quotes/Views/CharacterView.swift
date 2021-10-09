@@ -1,5 +1,5 @@
 //
-//  QuoteView.swift
+//  CharacterView.swift
 //  Harry Potter DB
 //
 //  Created by Russell Gordon on 2021-10-07.
@@ -7,27 +7,35 @@
 
 import SwiftUI
 
-struct QuoteView: View {
+struct CharacterView: View {
 
     // Inject model into the view as a property
-    let item: Quote
+    let item: Character
     
     var body: some View {
         VStack(alignment: .leading,
                spacing: 8) {
             
-            HStack {
-                
-                Image(systemName: "tv")
-                    .font(.system(size: 12, weight: .black))
-                
-                Text(item.anime)
-                
-            }
+            Text(item.name)
+                .font(.title)
+                .bold()
             
-            Text(makeAttributedString(title: "Character", label: item.character))
-            Text(makeAttributedString(title: "Quotes", label: item.quote))
-                .lineLimit(2)
+            AsyncImage(url: URL(string: item.image)!) { image in
+                image
+                    .resizable()
+                    .scaledToFill()
+                    .background(Color.gray)
+            } placeholder: {
+                ProgressView()
+            }
+            .frame(height: 200)
+            .clipShape(RoundedRectangle(cornerRadius: 10))
+            
+            Text(makeAttributedString(title: "Date of Birth",
+                                      label: item.dateOfBirth))
+            
+            Text(makeAttributedString(title: "Gender",
+                                      label: item.gender))
             
         }
        .padding()
@@ -45,7 +53,7 @@ struct QuoteView: View {
         if let range = string.range(of: label) {
             string[range].foregroundColor = .black.opacity(0.8)
             string[range].font = .system(size: 16)
-            string[range].foregroundColor = .red
+            string[range].foregroundColor = .black
         }
         
         return string
@@ -53,8 +61,8 @@ struct QuoteView: View {
     }
 }
 
-struct QuoteView_Previews: PreviewProvider {
+struct CharacterView_Previews: PreviewProvider {
     static var previews: some View {
-        QuoteView(item: Quote.dummyData.first!)
+        CharacterView(item: Character.dummyData.first!)
     }
 }
