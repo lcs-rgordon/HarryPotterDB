@@ -93,12 +93,12 @@
 		0EECE657270F057900E7E8D1 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
-				0EECE658270F058200E7E8D1 /* Quotes */,
+				0EECE658270F058200E7E8D1 /* Characters */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
 		};
-		0EECE658270F058200E7E8D1 /* Quotes */ = {
+		0EECE658270F058200E7E8D1 /* Characters */ = {
 			isa = PBXGroup;
 			children = (
 				0EECE665270F0C5E00E7E8D1 /* ViewModel */,
@@ -107,7 +107,7 @@
 				0EECE65C270F068E00E7E8D1 /* Screen */,
 				0EECE659270F058800E7E8D1 /* Model */,
 			);
-			path = Quotes;
+			path = Characters;
 			sourceTree = "<group>";
 		};
 		0EECE659270F058800E7E8D1 /* Model */ = {
