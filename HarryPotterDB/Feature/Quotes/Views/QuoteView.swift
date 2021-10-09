@@ -1,6 +1,6 @@
 //
 //  QuoteView.swift
-//  SwiftUI Starter
+//  Harry Potter DB
 //
 //  Created by Russell Gordon on 2021-10-07.
 //
