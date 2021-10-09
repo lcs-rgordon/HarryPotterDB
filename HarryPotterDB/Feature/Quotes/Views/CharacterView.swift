@@ -28,7 +28,7 @@ struct CharacterView: View {
             } placeholder: {
                 ProgressView()
             }
-            .frame(height: 200)
+            .frame(height: 300)
             .clipShape(RoundedRectangle(cornerRadius: 10))
             
             Text(makeAttributedString(title: "Date of Birth",
